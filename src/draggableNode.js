@@ -2,12 +2,12 @@
 //DraggableNode
 
 export const DraggableNode = ({ type, label, icon }) => {
-  // Function to handle drag start event
+ 
   const onDragStart = (event, nodeType) => {
     const appData = { nodeType }; // Data to be transferred
     event.target.style.cursor = 'grabbing'; // Change cursor style
     event.dataTransfer.setData('application/reactflow', JSON.stringify(appData)); // Set drag data
-    event.dataTransfer.effectAllowed = 'move'; // Set effect allowed
+    event.dataTransfer.effectAllowed = 'move'; 
   };
 
   return (
