@@ -6,7 +6,6 @@ export const SubmitButton = () => {
 
   const handleSubmit = async () => {
     try {
-      // Ensure that the nodes and edges are logged for debugging purposes
       console.log("Nodes being sent:", nodes);
       console.log("Edges being sent:", edges);
 
