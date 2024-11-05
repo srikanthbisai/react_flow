@@ -143,7 +143,7 @@ export const TextNode = ({ id, data = {} }) => {
                 position={Position.Left}
                 id={`${id}-handle-${index}`}
                 style={{
-                  visibility: "hidden", // This hides the dot but keeps the functionality
+                  visibility: "hidden",
                   width: "10px",
                   height: "10px",
                   borderRadius: "50%",
