@@ -1,6 +1,5 @@
 import React from 'react';
-import { useStore } from './store'; // Adjust the import path if needed
-
+import { useStore } from './store'; 
 export const SubmitButton = () => {
   const { nodes, edges } = useStore(); // Retrieve nodes and edges from the store
 
