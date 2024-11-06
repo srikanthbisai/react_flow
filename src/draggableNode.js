@@ -5,16 +5,16 @@ export const DraggableNode = ({ type, label, icon }) => {
  
   const onDragStart = (event, nodeType) => {
     const appData = { nodeType }; // Data to be transferred
-    event.target.style.cursor = 'grabbing'; // Change cursor style
-    event.dataTransfer.setData('application/reactflow', JSON.stringify(appData)); // Set drag data
+    event.target.style.cursor = 'grabbing';
+    event.dataTransfer.setData('application/reactflow', JSON.stringify(appData)); 
     event.dataTransfer.effectAllowed = 'move'; 
   };
 
   return (
     <div
       className={type}
-      onDragStart={(event) => onDragStart(event, type)} // Handle drag start
-      onDragEnd={(event) => (event.target.style.cursor = 'grab')} // Handle drag end
+      onDragStart={(event) => onDragStart(event, type)} 
+      onDragEnd={(event) => (event.target.style.cursor = 'grab')} 
       style={{ 
         cursor: 'grab', 
         minWidth: '80px', 
