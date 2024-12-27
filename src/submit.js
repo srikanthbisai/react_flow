@@ -9,7 +9,7 @@ export const SubmitButton = () => {
       console.log("Edges being sent:", edges);
 
       // Send nodes and edges to the FastAPI backend
-      const response = await fetch('https://fastapi-1-qik2.onrender.com/pipelines/parse', {
+      const response = await fetch('https://fastapi-4gsi.onrender.com/pipelines/parse', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
